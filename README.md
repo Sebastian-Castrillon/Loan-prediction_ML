@@ -44,11 +44,11 @@ La ultima grafica presenta la distribución de los creditos aprobados con relaci
 
 Para terminar con la limpieza de los datos, pasamos a valores numericos los valores categoricos.
 
-## Metodo de evaluación y normalización
+## 3. Metodo de evaluación y normalización
 
 Se escogió un conjunto de validación del 10%, utilizando cross-validation con 5 pliegues y para la normalización implementamos un StandardScaler, ajustado por medio del conjunto de entrenamiento.
 
-## Representación y reducción dimensional
+## 4. Representación y reducción dimensional
 Realizamos una descomposición en componentes principales del conjunto de entrenamiento, obteniendo la siguiente varianza explicada de los componentes.
 
 ![download](https://user-images.githubusercontent.com/106851565/171976705-ac35e306-34d0-4b9b-8b96-bfb836f99467.png)
@@ -56,7 +56,7 @@ Realizamos una descomposición en componentes principales del conjunto de entren
 
 Decidimos no realizar reducción dimensional debido a que no se retiene más de un 98% de la varianza, pero si se realizo la transformación para simplificar la representación de los datos. 
 
-## Implementación de clasificadores y selección de metricas de evaluación y optimización
+## 5. Implementación de clasificadores y selección de metricas de evaluación y optimización
 
 Realizamos la implementación de 4 clasificadores diferentes, siendo estos; regresión logistica, SVM, Random forest y KNN. Como metricas de evaluación utilizamos MCC y F1, finalmente escogimos el clasificador que tuviera las mayores calificaciones.
 
@@ -66,7 +66,7 @@ Para la iteración de los parametros utilizamos la función GridSearchCV, finalm
 
 ![image](https://user-images.githubusercontent.com/106851565/171979154-1b3d2c4e-0a6b-476d-8b8b-161b018ca2fb.png)
 
-## Validacion
+## 6. Validacion
 
 Finalmente realizando las pruebas con el conjunto de validación obtuvimos los siguientes resultados para ambos clasificadores, ajustando los clasificadores con todo el conjunto de entrenamiento.
 
