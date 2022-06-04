@@ -49,4 +49,25 @@ Para terminar con la limpieza de los datos, pasamos a valores numericos los valo
 Se escogió un conjunto de validación del 10%, utilizando cross-validation con 5 pliegues y para la normalización implementamos un StandardScaler, ajustado por medio del conjunto de entrenamiento.
 
 ## Representación y reducción dimensional
+Realizamos una descomposición en componentes principales del conjunto de entrenamiento, obteniendo la siguiente varianza explicada de los componentes.
 
+![download](https://user-images.githubusercontent.com/106851565/171976705-ac35e306-34d0-4b9b-8b96-bfb836f99467.png)
+![image](https://user-images.githubusercontent.com/106851565/171976846-8b9d8c5f-7a07-4ce0-8306-57d7623774c5.png)
+
+Decidimos no realizar reducción dimensional debido a que no se retiene más de un 98% de la varianza, pero si se realizo la transformación para simplificar la representación de los datos. 
+
+## Implementación de clasificadores y selección de metricas de evaluación y optimización
+
+Realizamos la implementación de 4 clasificadores diferentes, siendo estos; regresión logistica, SVM, Random forest y KNN. Como metricas de evaluación utilizamos MCC y F1, finalmente escogimos el clasificador que tuviera las mayores calificaciones.
+
+Para la iteración de los parametros utilizamos la función GridSearchCV, finalmente obtuvimos que los mejores clasificadores fueron la regresión logistica y random forest, ya que obtuvieron los mismos resultados de MCC y F1.
+
+![image](https://user-images.githubusercontent.com/106851565/171978975-c699ca05-5a5e-45b5-b61e-69690c2e8355.png)
+
+![image](https://user-images.githubusercontent.com/106851565/171979154-1b3d2c4e-0a6b-476d-8b8b-161b018ca2fb.png)
+
+## Validacion
+
+Finalmente realizando las pruebas con el conjunto de validación obtuvimos los siguientes resultados para ambos clasificadores, ajustando los clasificadores con todo el conjunto de entrenamiento.
+
+![image](https://user-images.githubusercontent.com/106851565/171980534-9c2dea96-3fee-4749-b929-9e6a17da96da.png)
