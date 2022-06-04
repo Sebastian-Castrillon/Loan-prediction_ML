@@ -71,3 +71,8 @@ Para la iteración de los parametros utilizamos la función GridSearchCV, finalm
 Finalmente realizando las pruebas con el conjunto de validación obtuvimos los siguientes resultados para ambos clasificadores, ajustando los clasificadores con todo el conjunto de entrenamiento.
 
 ![image](https://user-images.githubusercontent.com/106851565/171980534-9c2dea96-3fee-4749-b929-9e6a17da96da.png)
+
+## Resultados
+Finalmente subimos el archivo prediction.csv a la pagina del concurso obteniendo un accuracy de 76.38%
+![image](https://user-images.githubusercontent.com/106851565/171984333-b7feb55e-5fa5-40ce-85aa-a98f3b0a00ae.png)
+
