@@ -1,5 +1,5 @@
 # Loan prediction using machine learning
-Predicción de la aprobación de un credito. 
+Predicción de la aprobación de un credito utilizando diferentes métodos de clsificación supervisada. 
 
 Integrantes:
 
@@ -76,4 +76,3 @@ Finalmente realizando las pruebas con el conjunto de validación obtuvimos los s
 Finalmente subimos el archivo prediction.csv a la pagina del concurso obteniendo un accuracy de 76.38%
 ![image](https://user-images.githubusercontent.com/106851565/171984333-b7feb55e-5fa5-40ce-85aa-a98f3b0a00ae.png)
 
-Link al video: https://youtu.be/JCVWcHAzOlk
