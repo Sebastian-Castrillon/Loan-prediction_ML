@@ -66,9 +66,9 @@ Para la iteración de los parametros utilizamos la función GridSearchCV, finalm
 
 ![image](https://user-images.githubusercontent.com/106851565/171979154-1b3d2c4e-0a6b-476d-8b8b-161b018ca2fb.png)
 
-## 6. Validacion
+## 6. Validación
 
-Finalmente realizando las pruebas con el conjunto de validación obtuvimos los siguientes resultados para ambos clasificadores, re entrenando todos los clasificadores con todo el conjunto de entrenamiento.
+Finalmente re entranando los clasificadores con todo el conjunto de entranamiento y realizando las pruebas con el conjunto de validación, obtuvimos los siguientes resultados para ambos clasificadores.
 
 ![image](https://user-images.githubusercontent.com/106851565/171980534-9c2dea96-3fee-4749-b929-9e6a17da96da.png)
 
