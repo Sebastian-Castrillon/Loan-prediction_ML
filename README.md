@@ -1,11 +1,9 @@
 # Loan prediction using machine learning
-Predicción de la aprobación de un crédito utilizando diferentes métodos de clsificación supervisada. 
+Loan approval prediction using different supervised learning algorithms
 
 Integrantes:
 
 Juan Sebastián Castrillón
-
-Carlos Humberto Diaz
 
 ## Introducción del proyecto
 
