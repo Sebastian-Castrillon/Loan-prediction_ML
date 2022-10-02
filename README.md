@@ -1,27 +1,33 @@
 # Loan prediction using machine learning
 Loan approval prediction using different supervised learning algorithms
 
-Integrantes:
+Author:
 
 Juan Sebastián Castrillón
 
-## Introducción del proyecto
+## Project Introduction
 
-Se utilizó el siguiente dataset: https://www.kaggle.com/datasets/altruistdelhite04/loan-prediction-problem-dataset
+Dataset: https://www.kaggle.com/datasets/altruistdelhite04/loan-prediction-problem-dataset
+
+This dataset contains 642 samples, where each sample represent a person who has applied for a loan, each person have an ID assigned and there are 11 features inlcuding gender, married, number of dependents, education, income, coapplicant income, loan amount, loan term, credit history and property area. Finally there's a label column called Loan_Status that indicates if the loan was approved or not. There's also included a test dataset which has no labels with the purpose of predicting those missing labels and determine the accuracy of the predictions in this webpage: https://datahack.analyticsvidhya.com/contest/practice-problem-loan-prediction-iii/#LeaderBoard.
 
 Este conjunto de datos cuenta con 642 muestras que representan personas que han solicitado un crédito, cada usuario tiene asignado un ID, se presentan 11 caracteristicas dentro de este dataset, entre los que se encuentra; educación, estado civil, nivel de educación, si es trabajador independiente, ingresos del aplicante, ingresos del coaplicante, la cantidad de dinero solicitada, si presenta historial crediticio y el tipo de propiedad en la que reside. Como etiquetas se tiene si el crédito fue aprobado o no. El dataset incluye un conjunto de prueba el cual no cuenta con etiquetas, con el fin de generar las predicciones y validarlas en la siguiente pagina: https://datahack.analyticsvidhya.com/contest/practice-problem-loan-prediction-iii/#LeaderBoard.
 
 ## Desarrollo
 
-### 1. Identificación del problema
+### 1. Identifying the problem
+
+After checking the dataset is clear that this is a binary classification problem, because there's labels for each sample and these labels only have two values(Y/N)
 
 Revisando el conjunto de datos determinamos que es un problema de clasificación binaria, debido a que se tienen etiquetas para las muestras y estas toman unicamente dos valores.
 
-### 2. Análisis y limpieza de los datos
+### 2. Data Cleaning/Data Analysis
 
 Incialmente se importaron los datos, luego de esto se revisaron las columnas que presentan valores nulos y la cantidad de estos, obteniendo los siguientes resultados.
 
 ![image](https://user-images.githubusercontent.com/106851565/171973897-87b40b09-c1ee-4162-be59-6c06c6c98f4d.png)
+
+Next it was defined the strategy for filling the NaN values, for LoanAmount it was used the mean of all of the present values and for all of the other features we use the mode. Once all of the NaN values were eliminated/replaced.
 
 Posteriormente definimos las estrategias para rellenar los valores nulos, para LoanAmount se utilizo la media del resto de valores y para las demás características se utilizó la moda. Una vez eliminados todos los valores NaN realizamos un análisis de las diferentes caracterísitcas, iniciando con un histograma de todas las características numéricas.
 
