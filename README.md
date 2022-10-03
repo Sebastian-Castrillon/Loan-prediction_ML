@@ -23,6 +23,8 @@ Revisando el conjunto de datos determinamos que es un problema de clasificación
 
 ### 2. Data Cleaning/Data Analysis
 
+With the dataset imported  
+
 Incialmente se importaron los datos, luego de esto se revisaron las columnas que presentan valores nulos y la cantidad de estos, obteniendo los siguientes resultados.
 
 ![image](https://user-images.githubusercontent.com/106851565/171973897-87b40b09-c1ee-4162-be59-6c06c6c98f4d.png)
