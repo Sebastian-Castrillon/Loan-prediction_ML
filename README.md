@@ -23,7 +23,7 @@ Revisando el conjunto de datos determinamos que es un problema de clasificación
 
 ### 2. Data Cleaning/Data Analysis
 
-With the dataset imported  
+The data clening process started with the identification of how many NaN values were present in all of the columns, obtaining these results.
 
 Incialmente se importaron los datos, luego de esto se revisaron las columnas que presentan valores nulos y la cantidad de estos, obteniendo los siguientes resultados.
 
@@ -47,6 +47,8 @@ La siguiente gráfica presenta la distribución de los créditos aprobados segú
 La ultima grafica presenta la distribución de los créditos aprobados con relación a la eduación del solicitante, encontramos que es mayor la solicitud de créditos por parte de graduados y que la distribución de créditos aprobados es mayor para los solicitantes graduados.
 
 ![download](https://user-images.githubusercontent.com/106851565/171975537-49bff492-34ac-47d9-a97e-75440c2c60b8.png)
+
+The last step of the data cleaning process was to transform the categorical data to numerical data. 
 
 Para terminar con la limpieza de los datos, pasamos a valores numéricos los valores categóricos.
 
