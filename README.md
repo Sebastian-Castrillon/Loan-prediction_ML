@@ -52,12 +52,15 @@ The last step of the data cleaning process was to transform the categorical data
 
 Para terminar con la limpieza de los datos, pasamos a valores numéricos los valores categóricos.
 
-## 3. Metodo de evaluación y normalización
+## 3. Validation method and normalization
 
-Se escogió un conjunto de validación del 10%, decidimos entrenar los clasificadores utilizando cross-validation con 5 pliegues y para la normalización implementamos un StandardScaler, ajustado por medio del conjunto de entrenamiento.
+Se escogió un conjunto de validación del 10%, además para el entrenamiento de los clasificadores se utilizo cross-validation con 5 pliegues y para la normalización se implementó un StandardScaler, ajustado por medio del conjunto de entrenamiento.
 
-## 4. Representación y reducción dimensional
-Realizamos una descomposición en componentes principales del conjunto de entrenamiento, obteniendo la siguiente varianza explicada de los componentes.
+## 4. Principal Component Analysis(PCA)
+
+After executing a PCA to the test set it was obtained these variance for the components.
+
+Se realizó una descomposición en componentes principales del conjunto de entrenamiento, obteniendo la siguiente varianza explicada de los componentes.
 
 ![download](https://user-images.githubusercontent.com/106851565/171976705-ac35e306-34d0-4b9b-8b96-bfb836f99467.png)
 ![image](https://user-images.githubusercontent.com/106851565/171976846-8b9d8c5f-7a07-4ce0-8306-57d7623774c5.png)
@@ -66,9 +69,11 @@ It was decided not to apply dimmensional reduction because it wasn't possible to
 
 Se decidió no realizar reducción dimensional debido a que no se retiene más de un 98% de la varianza, pero si se realizó la transformación para simplificar la representación de los datos. 
 
-## 5. Implementación de clasificadores y selección de metricas de evaluación y optimización
+## 5. Classifiers and evaluation metrics
 
-Realizamos la implementación de 4 clasificadores diferentes, siendo estos; regresión logistica, SVM, Random forest y KNN. Como metricas de evaluación utilizamos MCC y F1, finalmente escogimos el clasificador que tuviera las mayores calificaciones.
+The implementation of 4 different classifiers was carried out, these being; logistic regression, SVM, Random forest and KNN. MCC and F1 were chosen as evaluation metrics. The function GridSearchCV from the library sklearn was used to find the best set of parameters for each classifier, after training all the classifiers the ones with the best MCC and F1 score were the logistic regression and random forest.
+
+Se realizo la implementación de 4 clasificadores diferentes, siendo estos; regresión logistica, SVM, Random forest y KNN. Como metricas de evaluación se escogió MCC y F1, finalmente se escogera el clasificador que obtenga las mayores calificaciones.
 
 Para la iteración de los parametros utilizamos la función GridSearchCV, finalmente obtuvimos que los mejores clasificadores fueron la regresión logistica y random forest, ya que obtuvieron los mismos resultados de MCC y F1.
 
@@ -78,7 +83,7 @@ Para la iteración de los parametros utilizamos la función GridSearchCV, finalm
 
 ## 6. Validation
 
-The chosen classifiers were trained using all of the test set, then a test were performed with the validation set, and the following results were obtained for both classifiers.
+The chosen classifiers were trained using all of the train set, then a test were performed with the validation set, and the following results were obtained for both classifiers.
 
 Se reentrenaron los clasificadores escogidos con todo el conjunto de entrenamiento, luego se realizaron pruebas con el conjunto de validación obteniendo los siguientes resultados para ambos clasificadores.
 
