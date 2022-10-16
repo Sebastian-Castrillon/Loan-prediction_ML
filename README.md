@@ -78,9 +78,9 @@ Para la iteración de los parametros utilizamos la función GridSearchCV, finalm
 
 ## 6. Validation
 
-The chosen classifiers were trained using all of the test set,
+The chosen classifiers were trained using all of the test set, then a test were performed with the validation set, and the following results were obtained for both classifiers.
 
-Se reentrenaron los clasificadores escogidos con todo el conjunto de entrenamiento, y realizando las pruebas con el conjunto de validación se obtuvieron los siguientes resultados para ambos clasificadores.
+Se reentrenaron los clasificadores escogidos con todo el conjunto de entrenamiento, luego se realizaron pruebas con el conjunto de validación obteniendo los siguientes resultados para ambos clasificadores.
 
 ![image](https://user-images.githubusercontent.com/106851565/171980534-9c2dea96-3fee-4749-b929-9e6a17da96da.png)
 
