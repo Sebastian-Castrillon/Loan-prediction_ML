@@ -62,7 +62,9 @@ Realizamos una descomposición en componentes principales del conjunto de entren
 ![download](https://user-images.githubusercontent.com/106851565/171976705-ac35e306-34d0-4b9b-8b96-bfb836f99467.png)
 ![image](https://user-images.githubusercontent.com/106851565/171976846-8b9d8c5f-7a07-4ce0-8306-57d7623774c5.png)
 
-Decidimos no realizar reducción dimensional debido a que no se retiene más de un 98% de la varianza, pero si se realizó la transformación para simplificar la representación de los datos. 
+It was decided not to apply dimmensional reduction because it wasn't possible to have a retention of the variance higher than 98%, but it was applied a linear transformation to simplify the represantion of the data. 
+
+Se decidió no realizar reducción dimensional debido a que no se retiene más de un 98% de la varianza, pero si se realizó la transformación para simplificar la representación de los datos. 
 
 ## 5. Implementación de clasificadores y selección de metricas de evaluación y optimización
 
@@ -74,13 +76,18 @@ Para la iteración de los parametros utilizamos la función GridSearchCV, finalm
 
 ![image](https://user-images.githubusercontent.com/106851565/171979154-1b3d2c4e-0a6b-476d-8b8b-161b018ca2fb.png)
 
-## 6. Validación
+## 6. Validation
 
-Finalmente re entranando los clasificadores con todo el conjunto de entranamiento y realizando las pruebas con el conjunto de validación, obtuvimos los siguientes resultados para ambos clasificadores.
+The chosen classifiers were trained using all of the test set,
+
+Se reentrenaron los clasificadores escogidos con todo el conjunto de entrenamiento, y realizando las pruebas con el conjunto de validación se obtuvieron los siguientes resultados para ambos clasificadores.
 
 ![image](https://user-images.githubusercontent.com/106851565/171980534-9c2dea96-3fee-4749-b929-9e6a17da96da.png)
 
-## Resultados
-Finalmente subimos el archivo prediction.csv a la pagina del concurso obteniendo un accuracy de 76.38%
+## Results
+
+Finally, the prediction.csv file was uploaded to the contest page, obtaining an accuracy of 76.38%.
+
+Finalmente se cargó el archivo prediction.csv a la pagina del concurso obteniendo un accuracy de 76.38%.
 ![image](https://user-images.githubusercontent.com/106851565/171984333-b7feb55e-5fa5-40ce-85aa-a98f3b0a00ae.png)
 
